@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('../fonts/CalSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #2B1C06;
+}
+
+.nave {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cal Sans', sans-serif;
+}
+
+.nave p {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'Cal Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cal Sans', sans-serif;
+    color: aliceblue;
+}
+
+.bola {
+
+    width: 100px;
+    height: 100px;
+    background-color: #F1E8E5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Cal Sans', sans-serif;
+    background-color: #F1E8E5;
+    border-radius: 100px;
+}
+
+.head h2 {
+    font-family: 'Cal Sans', sans-serif;
+    color: black;
+    font-size: 25px;
+}
