@@ -96,3 +96,22 @@ body {
 .dados li {
     color: #ffffff;
 }
+
+.voltarMenu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltarMenu a{
+    position: absolute;
+    left: 450px;
+}
+
+.centralizaTudo {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
