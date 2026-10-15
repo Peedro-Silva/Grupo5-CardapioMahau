@@ -1,67 +1,93 @@
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('../fonts/CalSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
+/* ---------- Base ---------- */
 body {
-    background-color: #f1e8e5 ;
-}
-
-h1 {
-    font-size: 167px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-}
-
-h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 100px;
+    background-color: #F1E8E5;
     color: #2B1C06;
+    font-family: 'Cal Sans', 'Gill Sans', Calibri, sans-serif;
+    margin: 0;
+    padding: 24px 32px 64px;
 }
-
+ 
 .titulo {
     text-align: center;
-    font-size: 167px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #2B1C06;
+    font-size: 64px;
+    margin: 0 0 32px;
 }
-
-.pesquisa {
-    display: flex;
-    justify-content: center;
-    border-radius: 75px ;
+ 
+h2 {
+    font-size: 40px;
+    margin: 48px 0 16px;
 }
-
+ 
+/* ---------- Grade de cartões ---------- */
 .menu {
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 24px;
+    margin-bottom: 24px;
 }
-
+ 
+/* ---------- Cartão ---------- */
 .cartao {
-    border: solid;
-    border-radius: 55px;
-    padding: 45px;
-    
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 65px;
-    color: white;
+    box-sizing: border-box;
+    padding: 16px;
+    border: 2px solid #2B1C06;
+    border-radius: 24px;
     background-color: #2B1C06;
-    box-shadow: 0 20px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
-
+ 
+.cartao:hover {
+    box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.cartao img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
+}
+ 
+.cartao h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 12px 0 8px;
+}
+ 
+/* Rodapé do cartão: chama à esquerda, botão à direita */
 .destaque {
     display: flex;
-    gap: 455px;
-    color: black;
-    padding: 45px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 36px;
+}
+ 
+.chama {
+    font-size: 20px;
+}
+ 
+.destaque button {
+    margin-left: auto;
+    padding: 4px 14px;
+    border: none;
+    border-radius: 999px;
+    background-color: yellow;
+    font-family: inherit;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.cartao:hover {
-    box-shadow: 0 40px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-    padding: 2px 16px;
-}
-
-button{
-    font-size: 100px; border-radius: 120px; background-color: yellow;
-    margin-top: 70px;
+.voltarMenu a{
+    position: absolute;
+    left: 450px;
 }
