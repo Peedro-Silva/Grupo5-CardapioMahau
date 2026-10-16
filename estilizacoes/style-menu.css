@@ -4,8 +4,7 @@
     font-weight: 400;
     font-style: normal;
 }
- 
-/* ---------- Base ---------- */
+
 body {
     background-color: #F1E8E5;
     color: #2B1C06;
@@ -13,27 +12,26 @@ body {
     margin: 0;
     padding: 24px 32px 64px;
 }
- 
+
 .titulo {
     text-align: center;
     font-size: 64px;
     margin: 0 0 32px;
 }
- 
+
 h2 {
     font-size: 40px;
     margin: 48px 0 16px;
 }
- 
-/* ---------- Grade de cartões ---------- */
+
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 24px;
     margin-bottom: 24px;
 }
- 
-/* ---------- Cartão ---------- */
+
+
 .cartao {
     box-sizing: border-box;
     padding: 16px;
@@ -45,11 +43,11 @@ h2 {
     box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
 }
- 
+
 .cartao:hover {
     box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
 }
- 
+
 .cartao img {
     display: block;
     width: 100%;
@@ -57,25 +55,25 @@ h2 {
     object-fit: cover;
     border-radius: 16px;
 }
- 
+
 .cartao h4 {
     font-size: 22px;
     font-weight: 400;
     margin: 12px 0 8px;
 }
- 
-/* Rodapé do cartão: chama à esquerda, botão à direita */
+
+
 .destaque {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 36px;
 }
- 
+
 .chama {
     font-size: 20px;
 }
- 
+
 .destaque button {
     margin-left: auto;
     padding: 4px 14px;
@@ -87,7 +85,14 @@ h2 {
     cursor: pointer;
 }
 
-.voltarMenu a{
+.voltarMenu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltarMenu a {
     position: absolute;
     left: 450px;
 }
